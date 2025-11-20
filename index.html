@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Luis Alberto León Ruiz</title>
+  <style>
+    :root{
+      --accent:#2563eb;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --radius:12px;
+      --max-width:900px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{background:var(--bg);color:#0f172a;margin:24px;padding:0;display:flex;justify-content:center}
+    .container{width:100%;max-width:var(--max-width);}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 20px rgba(15,23,42,0.08);overflow:hidden;display:grid;grid-template-columns:320px 1fr}
+    @media (max-width:800px){.card{grid-template-columns:1fr} .sidebar{order:0}}
+
+    /* Sidebar */
+    .sidebar{padding:28px;background:linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);}
+    .photo{width:110px;height:110px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;margin-bottom:18px}
+    h1{margin:0;font-size:22px}
+    .role{color:var(--muted);margin-top:6px;font-weight:600}
+    .section-title{margin-top:22px;margin-bottom:8px;font-size:12px;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+    .contact-item{font-size:14px;color:#111827;margin:6px 0}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(37,99,235,0.08);color:var(--accent);font-weight:600;font-size:13px;margin:6px 6px 0 0}
+    .skill{font-size:13px;padding:6px 8px;border-radius:8px;background:#f1f5f9;display:inline-block;margin:6px 6px 0 0}
+
+    /* Main */
+    .main{padding:28px}
+    .summary{font-size:15px;color:#0b1220;line-height:1.45}
+    .job{margin-top:14px}
+    .job h3{margin:0;font-size:16px}
+    .job .meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .job p{margin:8px 0 0 0;color:#0b1220}
+    .list{margin:8px 0 0 0;padding-left:18px}
+
+    /* Print-friendly */
+    @media print{
+      body{background:white}
+      .card{box-shadow:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="c
